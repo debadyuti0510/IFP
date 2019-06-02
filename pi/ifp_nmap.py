@@ -44,9 +44,8 @@ def scan_report():
         reports = cmd(str(i))
         if reports:
             f = open(path+ "/" +i + ".json", "w")
-            for report in reports:
-                r = json.dumps(report)
-                f.write(str(report))
+            r = json.dumps(reports)
+            f.write(r)
             f.close()
 
 if __name__ == "__main__":
