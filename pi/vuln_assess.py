@@ -20,6 +20,6 @@ if __name__ == "__main__":
             for port in ports:
                 services = services + str(port["service"]) + ", "
                 open_ports = open_ports + str(port["port"].split("/")[0]) + ", " 
-            message = message + "In device with IP: " + filename.split(".json")[0] + " services " + services + "\b\b are running on ports " + open_ports + "\b\b respectively and may be vulnerable to attacks.\n"  
+            message = message + "In device with IP: " + filename.split(".json")[0] + " services " + services + "\b\b are running on ports " + open_ports + "\b\b respectively and may be vulnerable to attacks.\n\n"  
     send_message(message)
     shutil.rmtree(path)
