@@ -3,6 +3,8 @@ import subprocess
 import os
 
 if __name__=="__main__":
+    if not os.path.isdir(os.getcwd()+"/check_mitm"):
+        os.mkdir("check_mitm")
     path = os.getcwd() + "/check_mitm/"
     UDP_IP_ADDRESS = "192.168.0.136"
     UDP_PORT_NO = 6789

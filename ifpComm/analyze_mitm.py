@@ -39,7 +39,7 @@ def analyze():
                         flag = flag + 1
             count.append(flag)
     mac = list(mac)
-    mitm = mac[count.index(max(count))]
+    mitm = mac[count.index(min(count))]
     mitm_details = find_mac(mitm)
     company = mitm_details["result"]["company"]
     print("The "+company+" device with mac: " + mitm + " is the possible man in the middle.")
