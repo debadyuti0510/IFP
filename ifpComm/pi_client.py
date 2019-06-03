@@ -4,7 +4,7 @@ import subprocess
 from ifp_linux import cmd_to_string
 import socket
 
-target = "127.0.0.1"
+target = "192.168.0.136"
 
 if __name__ == "__main__":
     UDP_IP_ADDRESS = target
